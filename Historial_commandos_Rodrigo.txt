@@ -1,0 +1,124 @@
+clear
+sudo fdisk -l
+clear
+ssh-keygen --help
+ssh-keygen -t ed25519
+cat $HOME/.ssh/*.pub
+mkdir repogit
+cd repogit/
+clear
+git clone git@github.com:RodrigoTobio/Practicando_Parcial.git
+tree
+sudo snap install tree
+clear
+tree
+cd Practicando_Parcial/
+ls
+clear
+mkdir clase_3
+touch probando.txt
+echo "Texto de prueba" >> probando.txt
+car probando.txt 
+cat probando.txt
+git add .
+git status
+git commit -m 'Primer commit'
+git config --global user.email "rodrigohtobio@gmail.com"
+git commit -m 'Primer commit'
+git push
+history > historial.txt
+ls
+tree
+echo "linea final" >> historial.txt
+cat historial.txt
+clear
+echo "hola mundo" | wc
+echo "hola mundo" | wc | awk {print$1}
+echo "hola mundo" | wc | awk '{print$1}'
+echo "hola mundo" | wc | awk '{print$2}'
+echo "hola mundo" | wc | awk '{print$3}'
+cat <<<FIN > nuevo.txt
+cat <<< FIN > nuevo.txt
+cat <<FIN > nuevo.txt
+linea1
+linea2
+linea3
+FIN
+
+ls
+cat nuevo.txt
+cat nuevo.txt | head -n1
+cat nuevo.txt | tail -n1
+cat nuevo.txt | grep 1
+cat nuevo.txt | grep linea
+grep -i proce /proc/cpuinfo
+cat /proc/cpuinfo | grep -i proce
+grep --help
+cat /proc/cpuinfo | grep -i proce | head -n1
+cat /proc/cpuinfo | grep -i proce | tail -n1
+clear
+pwd
+ls -l
+cat /ect/os-release
+cat /etc/os-release
+cat /etc/os-release | grep -i "home_url"
+man grep
+whoami
+echo "usuario:{"
+echo "usuario:{$whoami}"
+echo "usuario:(whoami)"
+echo "usuario:$(whoami)"
+echo "usuario:$(whoami)" > datos_usuario.txt
+ls
+cat datos_usuario.txt
+git add .
+git status
+git commit 'feat: nuevos cambios practica clase3'
+git commit -m 'feat: nuevos cambios practica clase3'
+git push
+cat /etc/cpuinfo
+cat /proc/cpuinfo
+clear
+ls
+
+cat datos_usuario.txt
+echo "usuario:$(whoami)" > datos_usuario.txt
+echo "modelo cpu:$(cat /proc/cpuinfo | grep -i 'model name') >> datos_usuario.txt
+"
+ls
+cat datos_usuario.txt
+echo "modelo de cpu:$(cat /proc/cpuinfo | grep -i 'model name')" >> datos_usuario.txt
+cat datos_usuario.txt
+echo "usuario:$(whoami)" > datos_usuario.txt
+echo "modelo de cpu:$(cat /proc/cpuinfo | grep -i 'model name' | awk -F ':' '{print$2}')" >> datos_usuario.txt
+cat datos_usuario.txt
+echo "usuario:$(whoami)" > datos_usuario.txt
+echo "modelo de cpu:$(cat /proc/cpuinfo | grep -i 'model name' | head -n1 | awk -F ':' '{print$2}')" >> datos_usuario.txt
+cat datos_usuario.txt
+git add .
+git status
+git commit -m 'feat: agrego informacion del cpu'
+git push
+grep --help
+cat /etc/passwd | grep -v 'nologin' | sort -k7 | head > lista_ordenada.ext
+ls
+cat lista_ordenada.ext
+cat /etc/passwd | grep -v 'nologin' | sort -t: -k7 | head > lista_ordenada.ext
+cat lista_ordenada.ext
+cat /etc/passwd | grep -v 'nologin' | sort -k7 | head > lista_ordenada.ext
+cat lista_ordenada.ext
+git add .
+git status
+git commit -m 'ADD: Listado de usaurios ordenada'
+sudo tcpdump -i interfaz
+tcpdump --help
+echo "comando_dump_net:$(tcpdump)" > comando_dump_net.txt
+echo "comando_dump_net:tcpdump" > comando_dump_net.txt
+cat comando_dump_net.txt
+git add .
+git commit -m 'ADD: Comando para Capturar y analizar el tráfico de red'
+ls
+vim README.md
+git add .
+git commit -m 'feat: Agrego datos del alumno al README.MD'
+history -a
