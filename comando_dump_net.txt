@@ -1,1 +1,2 @@
 comando_dump_net:tcpdump
+sudo tcpdump -i interfaz
